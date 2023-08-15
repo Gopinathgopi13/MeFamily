@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  /* border: 1px solid red;  */
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  /* right: 0; */
+  box-shadow: 2px -3px 23px 7px rgba(0, 0, 0, 0.174);
+  width: 100%;
+  z-index: 50;
+}
+nav a {
+  text-decoration: none;
+}
+nav .brand {
+  font-size: 28px;
+  font-weight: 600;
+  color: #24325d;
+  margin-left: 83px;
+  letter-spacing: 0.5px;
+}
+nav ul {
+  display: inline;
+  margin-left: 630px;
+}
+nav ul li a:hover {
+  color: #006fbe;
+}
+nav ul li {
+  display: inline;
+  margin-left: 16px;
+}
+nav ul li a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #24325d;
+}
+nav ul li .contacts {
+  color: #006fbe;
+}
+nav ul li .dropDown {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  background-color: white;
+  right: -50px;
+  bottom: -202px;
+  padding-left: 20px;
+  box-shadow: 2px -3px 23px 7px rgba(0, 0, 0, 0.174);
+}
+nav ul .dropDownLi {
+  position: relative;
+}
+nav ul .dropDownLi .dropDown {
+  visibility: hidden;
+  transition: height 0.3s;
+}
+nav ul li .dropDown a {
+  display: block;
+  width: 100%;
+}
+nav ul .dropDownLi:hover .dropDown {
+  height: 200px;
+  visibility: visible;
+}
+nav ul .dropDownLi .deepDropDown:hover .deep-drop-down {
+  height: 150px;
+}
+
+nav ul .dropDownLi .deep-drop-down {
+  width: 0px;
+  height: 150px;
+  position: absolute;
+  left: 202px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  bottom: 0;
+  left: 200px;
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: width 0.3s;
+}
+nav ul .dropDownLi .dropDown:nth-child(2):hover .deep-drop-down {
+  /* visibility: visible; */
+  opacity: 1;
+  width: 200px;
+}
+/* nav bar ends */
+
+/* Heading div starts */
+
+.heading {
+  margin-top: 75px;
+  height: 70px;
+  padding: 20px 100px;
+  background-color: #d3d3d32c;
+}
+.heading .headingDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.heading .headingDiv p {
+  display: inline-block;
+  font-size: 25px;
+}
+.heading .headingDiv div {
+  /* border: 1px solid red; */
+  width: 10%;
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.heading .headingDiv div span a {
+  text-decoration: none;
+  color: #006fbe;
+}
+
+/* Heading div ends */
+/* iframe div starts */
+.frame {
+  margin: 60px 120px;
+  /* border: 1px solid red; */
+  height: 250px;
+}
+.frame iframe {
+  width: 100%;
+  height: 100%;
+}
+/* iframe div ends */
+
+/* form div Starts */
+.forms {
+  height: 300px;
+  /* width: ; */
+  /* border:1px solid red ; */
+  margin: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.forms .address {
+  height: 300px;
+  width: 35%;
+  /* margin-left: 120px; */
+  /* border: 1px solid blue; */
+  /* display: flex;
+  justify-content: space-between; */
+}
+.forms .address .content {
+  display: flex;
+  /* align-items: ; */
+  /* justify-content: space-around; */
+  margin: 20px 0px 50px 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.forms .address .content .icon {
+  width: 10%;
+  height: 50px;
+  border-radius: 100%;
+  font-size: 20px;
+  color: #006fbe;
+  background-color: #e7f5ff;
+  /* border: 1px solid blue;   */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forms .address .content .details {
+  width: 70%;
+  margin-left: 20px;
+}
+
+.forms .address .content .details h2 {
+  color: #24325d;
+  margin-bottom: 10px;
+}
+
+.forms .address .content .details p {
+  color: #405aa7;
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.forms .address .content:hover .icon {
+  background-color: #006fbe;
+  color: #ffff;
+}
+
+.forms .formDiv {
+  width: 63%;
+  height: 100%;
+  /* border: 1px solid yellow; */
+  position: relative;
+}
+.forms .formDiv input,
+textarea {
+  border: 1px solid lightgray;
+}
+
+.formDiv .name {
+  height: 45px;
+  width: 48%;
+  /* margin-top: 20px; */
+  margin-right: 15px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  padding-left: 10px;
+  border: 1px solid gray;
+}
+.formDiv .mail {
+  height: 45px;
+  width: 48%;
+  position: absolute;
+  right: 0px;
+  border-radius: 3px;
+  padding-left: 10px;
+  border: 1px solid gray;
+}
+.formDiv .subject {
+  height: 45px;
+  width: 100%;
+  border-radius: 3px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  border: 1px solid gray;
+  outline: none;
+}
+.formDiv .textarea {
+  height: 150px;
+  width: 100%;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-top: 10px;
+  border: 1px solid gray;
+}
+.forms a {
+  position: absolute;
+  bottom: -200px;
+  right: 500px;
+  text-decoration: none;
+  background-color: #006fbe;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+.formDiv input:focus {
+  border: 1px solid #006fbe;
+  outline: none;
+}
+
+.formDiv textarea:focus {
+  border: 1px solid #006fbe;
+  outline: none;
+}
+
+/* Footer div starts */
+.footer{
+  height: 300px;
+  padding: 50px 100px 0px 100px;
+  background-color: #1D284B;
+  color: white;
+
+}
+.footer .icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0px 0px 10px 0px;
+}
+.footer .icons .i{
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #006fbe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+.footer p{
+  text-align: center;
+  margin-top: 15px;
+}
+.footer .copyRights p a{
+  text-decoration: none;
+  color: #006fbe;
+}
+
+/* Footer div ends */
+.copyRights .arrow{
+  border: 1px solid red;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: fixed; */
+  position: relative;
+  bottom: 50px;
+  /* right: -00px; */
+  left: 1300px;
+   border-radius: 100%;
+   color: white;
+   background-color: #006fbe; 
+  z-index: 10;
+  text-decoration: none;
+}
+
+/* ---End-- */
